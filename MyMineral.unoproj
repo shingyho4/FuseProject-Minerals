@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Format="1.0">
+    <BuildDir>.build</BuildDir>
+    <CacheDir>.cache</CacheDir>
+    <Copyright>Copyright (C) 2015</Copyright>
+    <Publisher>[Publisher]</Publisher>
+    <ReferenceUnoCore>True</ReferenceUnoCore>
+    <RootNamespace>MyMineral</RootNamespace>
+    <Title>$(Name)</Title>
+    <Version>0.0.0</Version>
+    <VersionCount>1</VersionCount>
+    <Android>
+        <ApplicationLabel>$(Title)</ApplicationLabel>
+        <Description>$(Description)</Description>
+        <VersionCode>$(VersionCount)</VersionCode>
+        <VersionName>$(Version)</VersionName>
+        <Icons>
+            <HDPI>$(Icon)</HDPI>
+            <LDPI>$(Icon)</LDPI>
+            <MDPI>$(Icon)</MDPI>
+            <XHDPI>$(Icon)</XHDPI>
+            <XXHDPI>$(Icon)</XXHDPI>
+            <XXXHDPI>$(Icon)</XXXHDPI>
+        </Icons>
+    </Android>
+    <HTML>
+        <Favicon>$(Icon)</Favicon>
+        <Title>$(Title)</Title>
+    </HTML>
+    <iOS>
+        <Icons>
+            <iPad_29_1x>$(Icon)</iPad_29_1x>
+            <iPad_29_2x>$(Icon)</iPad_29_2x>
+            <iPad_40_1x>$(Icon)</iPad_40_1x>
+            <iPad_40_2x>$(Icon)</iPad_40_2x>
+            <iPad_50_1x>$(Icon)</iPad_50_1x>
+            <iPad_50_2x>$(Icon)</iPad_50_2x>
+            <iPad_72_1x>$(Icon)</iPad_72_1x>
+            <iPad_72_2x>$(Icon)</iPad_72_2x>
+            <iPad_76_1x>$(Icon)</iPad_76_1x>
+            <iPad_76_2x>$(Icon)</iPad_76_2x>
+            <iPhone_29_1x>$(Icon)</iPhone_29_1x>
+            <iPhone_29_2x>$(Icon)</iPhone_29_2x>
+            <iPhone_40_2x>$(Icon)</iPhone_40_2x>
+            <iPhone_57_1x>$(Icon)</iPhone_57_1x>
+            <iPhone_57_2x>$(Icon)</iPhone_57_2x>
+            <iPhone_60_2x>$(Icon)</iPhone_60_2x>
+        </Icons>
+    </iOS>
+    <Mobile>
+        <KeepAlive>False</KeepAlive>
+        <Orientations>Auto</Orientations>
+        <RunsInBackground>True</RunsInBackground>
+        <ShowStatusbar>True</ShowStatusbar>
+    </Mobile>
+    <References>
+        <PackageReference Name="Fuse.Animations" />
+        <PackageReference Name="Fuse.BasicTheme" />
+        <PackageReference Name="Fuse.Controls" />
+        <PackageReference Name="Fuse.Designer" />
+        <PackageReference Name="Fuse.Drawing" />
+        <PackageReference Name="Fuse.Drawing.Primitives" />
+        <PackageReference Name="Fuse.Effects" />
+        <PackageReference Name="Fuse.Elements" />
+        <PackageReference Name="Fuse.Entities" />
+        <PackageReference Name="Fuse.Gestures" />
+        <PackageReference Name="Fuse.Navigation" />
+        <PackageReference Name="Fuse.Shapes" />
+        <PackageReference Name="Fuse.Triggers" />
+        <PackageReference Name="FuseCore" />
+        <PackageReference Name="Uno.Collections" />
+        <PackageReference Name="Uno.Data.Json" />
+        <PackageReference Name="Uno.Geometry" />
+    </References>
+    <Files>
+        <UXFile Name="MainView.ux" />
+        <SourceFile Name="MainView.ux.uno" />
+        <UXFile Name="MineralPhoto.ux" />
+        <SourceFile Name="MineralPhoto.ux.uno" />
+    </Files>
+</Project>

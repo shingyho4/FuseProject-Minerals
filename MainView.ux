@@ -1,0 +1,153 @@
+<App Theme="Basic" ClearColor="#e3e3e3ff">
+	<DockPanel>
+
+		<StatusBarBackground DockPanel.Dock="Top" />
+		<Grid Grid.Row="1" RowCount="1" DockPanel.Dock="Bottom">
+			<NavigationBar >
+				<GridLayout RowCount="1" ColumnCount="4" />
+				<Panel ux:Class="NavButton" />
+				<Style>
+					<Text Alignment="Center" TextColor="#fff" FontSize="20" Font="RobotoRegular" />
+					<NavButton ux:Cascade="false">
+						<Rectangle ux:Binding="Appearance">
+							<SolidColor ux:Name="_buttonColor" Color="#5d5352"/>
+						</Rectangle>
+
+						<Pressing>
+							<Change Duration="0.10" Target="_buttonColor.Color" Value="#3d3736" ux:Name="_buttonColorPressing" />
+						</Pressing>
+
+					</NavButton>
+				</Style>
+				<NavButton>
+					<Text>Home</Text>
+				</NavButton>
+				<NavButton>
+					<Text>People</Text>
+				</NavButton>
+				<NavButton>
+					<Text>Dict.</Text>
+				</NavButton>
+				<NavButton>
+					<Text>Search</Text>
+				</NavButton>
+			</NavigationBar>
+		</Grid>
+		<ScrollViewer>
+			<Grid ColumnCount="2">
+				<StackPanel ux:Name="PhotoCol1" Margin="10,10,5,0" WidthUnit="Percent" Width="100">
+					<Style>
+						<Image Margin="0,5,0,5" />
+					</Style>
+
+					<!-- <Image File="images/01.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/02.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/03.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/04.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/05.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/06.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/07.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/08.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/09.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/10.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/11.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/12.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/13.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/14.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/15.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/16.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/17.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/18.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/19.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/20.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/21.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/22.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/23.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/24.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/25.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/101.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/27.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/28.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/29.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/30.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/31.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/32.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/33.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/34.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/35.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/36.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/37.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/38.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/39.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/40.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/41.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/42.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/43.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/44.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/45.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/46.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/47.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/48.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/49.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/50.jpg" WidthUnit="Percent" Width="100"/> -->
+				</StackPanel>
+
+				<StackPanel ux:Name="PhotoCol2" Margin="5,10,10,0" WidthUnit="Percent" Width="100">
+					<Style>
+						<Image Margin="0,5,0,5" />
+					</Style>
+					<!-- <Image File="images/51.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/52.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/53.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/54.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/55.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/56.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/57.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/58.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/59.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/60.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/110.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/62.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/63.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/64.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/105.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/66.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/67.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/68.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/102.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/70.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/71.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/72.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/73.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/74.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/75.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/76.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/77.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/78.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/79.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/80.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/81.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/82.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/83.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/106.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/85.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/104.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/87.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/88.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/89.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/90.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/91.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/92.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/93.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/94.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/95.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/96.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/97.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/98.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/99.jpg" WidthUnit="Percent" Width="100"/>
+					<Image File="images/107.jpg" WidthUnit="Percent" Width="100"/> -->
+				</StackPanel>
+			</Grid>
+		</ScrollViewer>
+	</DockPanel>
+</App>

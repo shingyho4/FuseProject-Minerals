@@ -1,0 +1,3 @@
+<DockPanel ux:Class="MineralPhotos">
+	<Image ux:Name="MineralImage" DockPanel.Dock="Left" StretchSizing="Zero" Margin="0,0,0,0" />
+</DockPanel>
