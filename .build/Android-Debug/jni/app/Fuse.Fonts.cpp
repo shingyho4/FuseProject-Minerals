@@ -32,7 +32,7 @@ Fonts__uType* Fonts__typeof()
 {
     if (Fonts___fallback == NULL)
     {
-        Fonts___fallback = ::app::Fuse::Font__New_1(NULL, ::uCast< ::app::Uno::BundleFile*>(::app::Uno::Runtime::Implementation::Internal::BundleRegistry__Get(NULL, 100), ::app::Uno::BundleFile__typeof()));
+        Fonts___fallback = ::app::Fuse::Font__New_1(NULL, ::uCast< ::app::Uno::BundleFile*>(::app::Uno::Runtime::Implementation::Internal::BundleRegistry__Get(NULL, 285), ::app::Uno::BundleFile__typeof()));
     }
 
     return Fonts___fallback;

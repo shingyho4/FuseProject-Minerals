@@ -5,7 +5,7 @@ using Fuse.Controls;
 using Fuse.Gestures;
 using Fuse.Resources;
 
-public partial class MineralPhotos
+public partial class MineralPhoto
 {
 	public ImageSource Cover
 	{

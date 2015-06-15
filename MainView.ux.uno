@@ -24,6 +24,7 @@ class Photo
 
 public partial class MainView
 {
+	
 	Photo[] _photos = new[] 
 	{
 		new Photo(import BundleFile("images/02.jpg"), "hoho", "ext hoho"),
@@ -43,4 +44,5 @@ public partial class MainView
 			PhotoCol1.AddChild(ui);
 		}
 	}
+	
 }

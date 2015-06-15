@@ -65,7 +65,7 @@ void SpriteFontShader__Draw(SpriteFontShader* __this, ::app::Uno::Content::Fonts
 
 void SpriteFontShader__init_DrawCalls(SpriteFontShader* __this)
 {
-    __this->_draw_6b7396b4 = ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New_1(NULL, ::uCast< ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>(::app::Uno::Runtime::Implementation::Internal::BundleRegistry__Get(NULL, 120), ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram__typeof()));
+    __this->_draw_6b7396b4 = ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New_1(NULL, ::uCast< ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>(::app::Uno::Runtime::Implementation::Internal::BundleRegistry__Get(NULL, 305), ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram__typeof()));
 }
 
 void SpriteFontShader___ObjInit_1(SpriteFontShader* __this)

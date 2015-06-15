@@ -6,4 +6,10 @@ D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\res\drawable-xhdpi
 D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\res\drawable-xxhdpi\icon.png \
 D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\res\drawable-xxxhdpi\icon.png \
 D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\res\values\strings.xml \
+D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\res\drawable-hdpi\icon.png \
+D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\res\drawable-ldpi\icon.png \
+D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\res\drawable-mdpi\icon.png \
+D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\res\drawable-xhdpi\icon.png \
+D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\res\drawable-xxhdpi\icon.png \
+D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\res\drawable-xxxhdpi\icon.png \
 D:\Shing\work\OCIO\FuseProject\MyMineral\.build\Android-Debug\bin\AndroidManifest.xml \

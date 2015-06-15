@@ -221,6 +221,7 @@ libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.KeyValuePair__int__Fuse_Input_Poi
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Uno_EventHandler.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Uno_Runtime_Implementation_Internal_Forma-a0649357.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__int.cpp.o
+libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__char.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_RenderTargetEntry.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__framebuffer.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_CacheFramebuffer.cpp.o
@@ -265,7 +266,6 @@ libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_Layouts_Row.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_Layouts_Column.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Uno_UX_Resource.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_Style.cpp.o
-libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__char.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Uno_UX_ITemplate.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_Input_Capturer.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Uno.Collections.List__Fuse_Drawing_Contour.cpp.o
@@ -1176,8 +1176,8 @@ libs/$(ABI)/$(SONAME): obj/app/Experimental.TextureLoader.Callback.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Experimental.TextureLoader.InvalidContentTypeException.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Experimental.TextureLoader.TextureLoader.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/Experimental.TextureLoader.TextureLoaderImpl.cpp.o
-libs/$(ABI)/$(SONAME): obj/app/_.NavButton.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/_.MainView.cpp.o
+libs/$(ABI)/$(SONAME): obj/app/_.NavButton.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/_.MainView_Template3.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/_.MainView_Template2.cpp.o
 libs/$(ABI)/$(SONAME): obj/app/_.MainView_Template1.cpp.o
@@ -2183,6 +2183,11 @@ obj/app/Uno.Collections.List__int.cpp.o: include/app/Uno.IndexOutOfRangeExceptio
 obj/app/Uno.Collections.List__int.cpp.o: jni/app/Uno.Collections.List__int.cpp | obj/app
 	$(CXX) $(CXX_FLAGS) -o obj/app/Uno.Collections.List__int.cpp.o -c jni/app/Uno.Collections.List__int.cpp
 
+obj/app/Uno.Collections.List__char.cpp.o: include/app/Uno.Bool.h
+obj/app/Uno.Collections.List__char.cpp.o: include/app/Uno.Collections.List__char.h
+obj/app/Uno.Collections.List__char.cpp.o: jni/app/Uno.Collections.List__char.cpp | obj/app
+	$(CXX) $(CXX_FLAGS) -o obj/app/Uno.Collections.List__char.cpp.o -c jni/app/Uno.Collections.List__char.cpp
+
 obj/app/Uno.Collections.List__Fuse_RenderTargetEntry.cpp.o: include/app/Fuse.RenderTargetEntry.h
 obj/app/Uno.Collections.List__Fuse_RenderTargetEntry.cpp.o: include/app/Uno.Bool.h
 obj/app/Uno.Collections.List__Fuse_RenderTargetEntry.cpp.o: include/app/Uno.Collections.List__Fuse_RenderTargetEntry.h
@@ -2492,11 +2497,6 @@ obj/app/Uno.Collections.List__Fuse_Style.cpp.o: include/app/Uno.Collections.List
 obj/app/Uno.Collections.List__Fuse_Style.cpp.o: include/app/Uno.IndexOutOfRangeException.h
 obj/app/Uno.Collections.List__Fuse_Style.cpp.o: jni/app/Uno.Collections.List__Fuse_Style.cpp | obj/app
 	$(CXX) $(CXX_FLAGS) -o obj/app/Uno.Collections.List__Fuse_Style.cpp.o -c jni/app/Uno.Collections.List__Fuse_Style.cpp
-
-obj/app/Uno.Collections.List__char.cpp.o: include/app/Uno.Bool.h
-obj/app/Uno.Collections.List__char.cpp.o: include/app/Uno.Collections.List__char.h
-obj/app/Uno.Collections.List__char.cpp.o: jni/app/Uno.Collections.List__char.cpp | obj/app
-	$(CXX) $(CXX_FLAGS) -o obj/app/Uno.Collections.List__char.cpp.o -c jni/app/Uno.Collections.List__char.cpp
 
 obj/app/Uno.Collections.List__Uno_UX_ITemplate.cpp.o: include/app/Uno.Bool.h
 obj/app/Uno.Collections.List__Uno_UX_ITemplate.cpp.o: include/app/Uno.Collections.List__Uno_UX_ITemplate.h
@@ -11234,10 +11234,6 @@ obj/app/Experimental.TextureLoader.TextureLoaderImpl.cpp.o: include/Uno/XliInter
 obj/app/Experimental.TextureLoader.TextureLoaderImpl.cpp.o: jni/app/Experimental.TextureLoader.TextureLoaderImpl.cpp | obj/app
 	$(CXX) $(CXX_FLAGS) -o obj/app/Experimental.TextureLoader.TextureLoaderImpl.cpp.o -c jni/app/Experimental.TextureLoader.TextureLoaderImpl.cpp
 
-obj/app/_.NavButton.cpp.o: include/app/_.NavButton.h
-obj/app/_.NavButton.cpp.o: jni/app/_.NavButton.cpp | obj/app
-	$(CXX) $(CXX_FLAGS) -o obj/app/_.NavButton.cpp.o -c jni/app/_.NavButton.cpp
-
 obj/app/_.MainView.cpp.o: include/app/_.MainView.h
 obj/app/_.MainView.cpp.o: include/app/_.MainView_Template.h
 obj/app/_.MainView.cpp.o: include/app/_.MainView_Template1.h
@@ -11331,6 +11327,10 @@ obj/app/_.MainView.cpp.o: include/app/Uno.UX.Template__Fuse_Controls_Text.h
 obj/app/_.MainView.cpp.o: include/app/Uno.UX.Template__NavButton.h
 obj/app/_.MainView.cpp.o: jni/app/_.MainView.cpp | obj/app
 	$(CXX) $(CXX_FLAGS) -o obj/app/_.MainView.cpp.o -c jni/app/_.MainView.cpp
+
+obj/app/_.NavButton.cpp.o: include/app/_.NavButton.h
+obj/app/_.NavButton.cpp.o: jni/app/_.NavButton.cpp | obj/app
+	$(CXX) $(CXX_FLAGS) -o obj/app/_.NavButton.cpp.o -c jni/app/_.NavButton.cpp
 
 obj/app/_.MainView_Template3.cpp.o: include/app/_.MainView.h
 obj/app/_.MainView_Template3.cpp.o: include/app/_.MainView_Template3.h
@@ -12030,6 +12030,11 @@ include/app/Uno.Collections.List__int.h: include/Uno/Uno.h
 include/app/Uno.Collections.List__int.h: include/app/Uno.Collections.List1_Enumerator__int.h
 include/app/Uno.Collections.List__int.h: include/app/Uno.Int.h
 
+include/app/Uno.Collections.List__char.h: include/app/Uno.Object.h
+include/app/Uno.Collections.List__char.h: include/Uno/Uno.h
+include/app/Uno.Collections.List__char.h: include/app/Uno.Char.h
+include/app/Uno.Collections.List__char.h: include/app/Uno.Int.h
+
 include/app/Uno.Collections.List__Fuse_RenderTargetEntry.h: include/app/Uno.Collections.ICollection__Fuse_RenderTargetEntry.h
 include/app/Uno.Collections.List__Fuse_RenderTargetEntry.h: include/app/Uno.Collections.IList__Fuse_RenderTargetEntry.h
 include/app/Uno.Collections.List__Fuse_RenderTargetEntry.h: include/app/Uno.Object.h
@@ -12274,11 +12279,6 @@ include/app/Uno.Collections.List__Fuse_Style.h: include/app/Uno.Collections.ILis
 include/app/Uno.Collections.List__Fuse_Style.h: include/app/Uno.Object.h
 include/app/Uno.Collections.List__Fuse_Style.h: include/Uno/Uno.h
 include/app/Uno.Collections.List__Fuse_Style.h: include/app/Uno.Int.h
-
-include/app/Uno.Collections.List__char.h: include/app/Uno.Object.h
-include/app/Uno.Collections.List__char.h: include/Uno/Uno.h
-include/app/Uno.Collections.List__char.h: include/app/Uno.Char.h
-include/app/Uno.Collections.List__char.h: include/app/Uno.Int.h
 
 include/app/Uno.Collections.List__Uno_UX_ITemplate.h: include/app/Uno.Collections.ICollection__Uno_UX_ITemplate.h
 include/app/Uno.Collections.List__Uno_UX_ITemplate.h: include/app/Uno.Collections.IList__Uno_UX_ITemplate.h
@@ -16534,6 +16534,10 @@ include/app/Experimental.TextureLoader.TextureLoader.h: include/Uno/Uno.h
 
 include/app/Experimental.TextureLoader.TextureLoaderImpl.h: include/Uno/Uno.h
 
+include/app/_.MainView.h: include/app/Fuse.App.h
+include/app/_.MainView.h: include/app/Fuse.IResourceParent.h
+include/app/_.MainView.h: include/Uno/Uno.h
+
 include/app/_.NavButton.h: include/app/Fuse.Controls.Internal.ICollectionParent.h
 include/app/_.NavButton.h: include/app/Fuse.Controls.Panel.h
 include/app/_.NavButton.h: include/app/Fuse.IActualSize.h
@@ -16545,10 +16549,6 @@ include/app/_.NavButton.h: include/app/Fuse.Triggers.Actions.IHide.h
 include/app/_.NavButton.h: include/app/Fuse.Triggers.Actions.IShow.h
 include/app/_.NavButton.h: include/app/Fuse.Triggers.IAddRemoveChild.h
 include/app/_.NavButton.h: include/Uno/Uno.h
-
-include/app/_.MainView.h: include/app/Fuse.App.h
-include/app/_.MainView.h: include/app/Fuse.IResourceParent.h
-include/app/_.MainView.h: include/Uno/Uno.h
 
 include/app/_.MainView_Template3.h: include/app/Uno.UX.ITemplate.h
 include/app/_.MainView_Template3.h: include/app/Uno.UX.Template__Fuse_Controls_Image.h

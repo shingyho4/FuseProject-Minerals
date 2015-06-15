@@ -1,4 +1,4 @@
-// This file was generated based on 'D:\Shing\work\OCIO\FuseProject\MyMineral\.cache\GeneratedCode\MainView.g.uno'.
+// This file was generated based on 'D:\Shing\work\OCIO\FuseProject\MyMineral\MainView.ux.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #ifndef __APP___MAIN_VIEW_H__

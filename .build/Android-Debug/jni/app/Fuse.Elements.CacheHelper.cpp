@@ -88,7 +88,7 @@ void CacheHelper__init_DrawCalls(CacheHelper* __this)
     ::uArray* Vertices_be52273c_1_0_0 = array_126;
     __this->Blit_Coord_be52273c_1_1_1 = ::app::Uno::Graphics::VertexBuffer__New_3(NULL, ::app::Uno::Runtime::Implementation::Internal::BufferConverters__ToBuffer_1(NULL, Vertices_be52273c_1_0_0), 0);
     __this->Blit_Vertices_be52273c_1_0_7 = Vertices_be52273c_1_0_0;
-    __this->_draw_be52273c = ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New_1(NULL, ::uCast< ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>(::app::Uno::Runtime::Implementation::Internal::BundleRegistry__Get(NULL, 136), ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram__typeof()));
+    __this->_draw_be52273c = ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New_1(NULL, ::uCast< ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>(::app::Uno::Runtime::Implementation::Internal::BundleRegistry__Get(NULL, 321), ::app::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram__typeof()));
 }
 
 void CacheHelper___ObjInit(CacheHelper* __this)

@@ -1,10 +1,10 @@
-public partial class MineralPhotos: Fuse.Controls.DockPanel
+public partial class MineralPhoto: Fuse.Controls.DockPanel
 {
     internal Fuse.Controls.Image MineralImage;
-    static MineralPhotos()
+    static MineralPhoto()
     {
     }
-    public MineralPhotos()
+    public MineralPhoto()
     {
         InitializeUX();
     }
